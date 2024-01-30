@@ -1,5 +1,5 @@
 class pythonpart:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         n = len(nums)
         for i in range (n-1):
             for j in range (i+1, n):
@@ -8,6 +8,7 @@ class pythonpart:
         return []
     
     def main():
-        array = {0,1,2,3,4,5,6,7,8,9}
+        array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
         arrayTwo = twoSum(array, 17)
-        print(arrayTwo)
+        for i in arrayTwo:
+            print(i)
