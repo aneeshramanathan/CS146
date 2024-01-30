@@ -1,3 +1,6 @@
+from typing import Self
+
+
 class pythonpart:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         n = len(nums)
@@ -8,6 +11,6 @@ class pythonpart:
         return []
     
     array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    arrayTwo = twoSum(array, 17)
+    arrayTwo = twoSum(Self, array, 17)
     for i in arrayTwo:
         print(i)
