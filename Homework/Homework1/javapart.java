@@ -3,11 +3,11 @@ package Homework.Homework1;
 class Solution {
     public static boolean isPalindrome(String s) {
         String newString = "";
-        for(char c : s.toCharArray()){
-            if(Character.isDigit(c) || Character.isLetter(c)){
-                newString += c;
+        for(int i = 0; i < s.length() - 1; i++){
+            if(Character.isDigit(s.charAt(i)) || Character.isLetter(s.charAt(i))){
+                newString += s.charAt(i);
             }
-        }
+        } 
         newString = newString.toLowerCase();
         int i = 0;
         int j = newString.length() - 1;
