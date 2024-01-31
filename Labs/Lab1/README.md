@@ -1,1 +1,1 @@
-hi
+I created 2 for loops one to hold the value of the first element in the array and then we parse through the rest of the array and add the values until we get the target. The nested for loop parse though everything but the first value. If none of the values added up equal to the target value then the outer for loop will go to the second value in the array and then the nested for loop will parse through the rest of the array to see if the values can be added up to the target. Once the value is found we return the indexs of the values that we found.
