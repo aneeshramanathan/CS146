@@ -16,4 +16,8 @@ public class javapart extends VersionControl {
         }
         return least;
     }
+
+     public static void main (String [] args){
+        System.out.println(firstBad(4));
+    }
 }
