@@ -1,1 +1,19 @@
+MATRIX_MULTIPLY(A, B): 
+  if columns(A) ≠ rows(B):                                           1
+    raise ValueError("Matrix multiplication is not defined.")        1
 
+  rows_A ← number of rows in A                                       1
+  cols_A ← number of columns in A                                    1 
+  cols_B ← number of columns in B                                    1 
+  result ← matrix of size rows_A x cols_B filled with zeros          1 
+
+  for i from 1 to rows_A do:                                         N+1
+    for j from 1 to cols_B do:                                       N(N+1)
+    sum ← 0                                                          N
+    for k from 1 to cols_A do:                                       N(N+1)
+      sum ← sum + A[i][k] * B[k][j]                                  N(N)
+    result[i][j] ← sum return result                                 N
+
+
+The time complexity for this code is rows_A * cols_B * cols_A. This is because the our loop runs for row_A iterations and the first inner loop runs for cols_B iterations 
+and the last nested for loop runs for cols_A. If you multiple all 3 together then you would get the time complexity for the code.
