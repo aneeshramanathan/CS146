@@ -15,5 +15,5 @@ MATRIX_MULTIPLY(A, B):
     result[i][j] ← sum return result                                 N
 
 
-The time complexity for this code is rows_A * cols_B * cols_A. This is because the our loop runs for row_A iterations and the first inner loop runs for cols_B iterations 
+The time complexity for this code is rows_A * (cols_B + cols_A). This is because the our loop runs for row_A iterations and the first inner loop runs for cols_B iterations 
 and the last nested for loop runs for cols_A. If you multiple all 3 together then you would get the time complexity for the code.
