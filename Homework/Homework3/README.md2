@@ -9,12 +9,13 @@ MATRIX_MULTIPLY(A, B):
 
   for i from 1 to rows_A do:                                         N+1
     for j from 1 to cols_B do:                                       N(N+1)
-    sum ← 0                                                          N
-    for k from 1 to cols_A do:                                       N(N+1)
-      sum ← sum + A[i][k] * B[k][j]                                  N(N)
+      sum ← 0                                                          N(N)
+      for k from 1 to cols_A do:                                       (N+1)(N+1)(N)
+        sum ← sum + A[i][k] * B[k][j]                                  N(N)(N)
     result[i][j] ← sum return result                                 N
 
 
-The time complexity for this code is N^2. This is because the our loop runs for row_A iterations and the first inner loop runs for cols_B iterations 
-and the last nested for loop runs for cols_A. The highest power after you add up all the values is N^2 therefore the time complexity would be N^2 for
+The time complexity for this code is N^3. This is because the our loop runs for row_A iterations and the first inner loop runs for cols_B iterations 
+and the last nested for loop runs for cols_A. The third loop is nested inside the second loop which means that you have to multiple that by the 
+iterations of the first two loops. The highest power after you add up all the values is N^3 therefore the time complexity would be N^3 for
 this specific program.
