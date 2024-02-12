@@ -20,7 +20,7 @@ isPrime(n):
     }
   return true
 
-  Best Case: O(1)
-  Average Case: O(sqrt(n))
+  Best Case: O(1). If there is an even number then it would be the best case.
+  Average Case: O(sqrt(n)). When it is a prime nimber.
   Worst Case: O(sqrt(n))
  
