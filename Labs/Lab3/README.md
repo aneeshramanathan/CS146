@@ -1,8 +1,8 @@
 Problem 1:
 a. 10000000000n^2 vs n^3
-10000000000n^2 is asymptomatically greater than n^3 until n reaches 10000000000
+n^3 is asymptomatically greater than 10000000000n^2
 b. n^2log(n) vs n(log(n))^10
-n(log(n))^10 is asymptomatically greater than n^2log(n)
+n^2log(n) is asymptomatically greater than n(log(n))^10
 c. n^log(n) vs 2^sqrt(n)
 2^sqrt(n) is asymptomatically greater than n^log(n)
 d. 2^n vs 2^2n
@@ -16,7 +16,7 @@ isPrime(n):
     }
   return true
 
-  Best Case: O(1), Omega(n)
-  Average Case: O(n), Omega(n), Theta(n)
-  Worst Case: O(n), Omega(n), Theta(n)
+  Best Case: O(1)
+  Average Case: O(sqrt(n))
+  Worst Case: O(sqrt(n))
  
