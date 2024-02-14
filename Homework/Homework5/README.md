@@ -40,8 +40,21 @@ c. T(n)=9(n/2)+n^2
    T(n)=9^log(n)T(n/2^log(n))+n^2((log(n)-1/i)∑9^i(n/2^(log(n)-1))^2)
    T(n)=9^log(n)*1+n^2((9^log(n)-1)/8-4(2^-2log(n)-1)/3)
    Masters Theorem: 
-   
-d.
+   T(n)=aT(n/b)+f(n)
+   a=9, b=2, f(n)=n^2
+   n^2=O(n^c) where c=2
+   logb(a)=log2(9)>c
+   Case 1 of masters theorem
+   O(nlog2(cn)+1)
+d. T(n)=100T(n/2)+n^(log2(cn)+1)
+
+   Masters Theorem:
+   a=100, b=2, f(n)=nlog2(cn)+1
+   Case 3 of masters theorem
+   O(n^2log(n))
+e. T(n)=
+Problem 2:
+
    
 
    
