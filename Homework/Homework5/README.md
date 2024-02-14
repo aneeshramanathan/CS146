@@ -84,4 +84,14 @@ f. T(n)=5T(n/2)+n^2/log(n)
    O(n^logb(a))
 
 Problem 2:
-   
+   yetAnotherFunc(n): 
+   if n > 1: 
+   for(i=0;i<10n;i++)
+      doSomething;
+      yetAnotherFunc(n/2);
+      yetAnotherFunc(n/2);
+   T(n)=2(T(n/2)+10n)=2T(n/2)+20n
+   Using masters method:
+   a=2, b=2, f(n)=20n
+   Second case because 20n has a polynomial degree of 1 and logb(a) is also equal to 1
+   T(n)=Theta(n^logb(a)log^k+1(n))=Theta(nlog(n))
