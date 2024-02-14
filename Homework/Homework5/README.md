@@ -51,14 +51,24 @@ d. T(n)=100T(n/2)+n^(log2(cn)+1)
    Masters Theorem:
    a=100, b=2, f(n)=nlog2(cn)+1
    Case 3 of masters theorem
-   O(n^2log(n))
+   n^2log(n)
 e. T(n)=4T(n/2)+n^2log(n)
    T(n)=4^2T(n/4)+4(n/2)^2log(n/2)+n^2log(n)
    T(n)=4^3T(n/8)+4^2(n/4)^2log(n/4)+4(n/2)^2log(n/2)+n^2log(n)
    T(n)=4^kT(n/2^k)+4^k-1(n/2^k-1)^2log(n/2^k-1)+4^k-2(n/2^k-2)^2log(n/2^k-2)+4^k-3(n/2^k-3)^2log(n/2^k-3)
-   T(n)=4^kT(n/2^k)+
+   T(n)=4^kT(n/2^k)+(k-1/i=0)∑4^i(n/2^i)^2log(n/2^i)+n^2log(n)
+   k=log2(n)
+   T(n)=4^log2(n)T(n/2^log2(n))+(log2(n)-1/i=0)∑4^i(n/2^i)^2log(n/2^i)+n^2log(n)
+   (log2(n)-1/i=0)∑4^i(n/2^i)^2log(n/2^i)+n^2log(n)=n^2(log(n)(log2(n)-1/i=0)∑1/2^2i-log(2)(log(n-1)/i=0)∑i/2^2i)
+   log(n)(log2(n)-1/i=0)∑1/2^2i=4/3-4n^2/3
+   log(2)(log(n-1)/i=0)∑i/2^2i=log2(n)
+   n^2log(n)
    Masters Theorem:
-   a=
+   T(n)=4T(n/2)+n^2log(n)
+   a=4, b=2, f(n)=n^2log(n)
+   f(N)=n^2log(n)=n^c, c = 2
+   logb(a)=log2(4)=2.
+   n^clog(n)
 f. T(n)=5T(n/2)+n^2/log(n)
    T(n)=5^2T(n/4)+5(n/2)^2log(n/2)+n^2/log(n)
    T(n)=5^3T(n/8)+5^2(n/4)^2log(n/4)+5(n/2)^2log(n/2)+n^2/log(n)
