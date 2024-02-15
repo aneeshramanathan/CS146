@@ -47,11 +47,18 @@ c. T(n)=9(n/2)+n^2
    Case 1 of masters theorem
    O(nlog2(cn)+1)
 d. T(n)=100T(n/2)+n^(log2(cn)+1)
-   
+   T(n)=100^2T(n/4)+100(n/2)^(log2(cn)+1)+n^(log2(cn)+1)
+   n^(log2(cn)+1)=n^log2(cn)*n
    Masters Theorem:
-   a=100, b=2, f(n)=nlog2(cn)+1
-   Case 3 of masters theorem
-   n^2log(n)
+   a=100, b=2, f(n)=n^log2(cn)+1
+   n^logb(a)=n^log2(100)=n^6
+   f(n)=n^(log2(cn)+1)=n^(log2(n)+log2(c)+1)
+   n^(log2(n)+log2(c)+1)=n^log2(c)*n^(log2(n)+1)
+   n^log2(c)*n^(log2(n)+1)=n^log2(c)*n*n^log2(n)
+   Use case 3 because we have to compare n^log2(n) to n^6
+   Theta(n^logb(a))
+   n^log2(100)=n^6
+   n^c
 e. T(n)=4T(n/2)+n^2log(n)
    T(n)=4^2T(n/4)+4(n/2)^2log(n/2)+n^2log(n)
    T(n)=4^3T(n/8)+4^2(n/4)^2log(n/4)+4(n/2)^2log(n/2)+n^2log(n)
