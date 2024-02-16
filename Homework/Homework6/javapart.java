@@ -8,8 +8,7 @@ public List<List<Integer>> threeSum(int[] nums) {
             int j = i+1;
             int k = nums.length-1;
             while(j<k){
-                int sum = nums[i]+nums[j]+nums[k];
-                if(sum==0){
+                if(nums[i]+nums[j]+nums[k]==0){
                     values.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     while(j<k && nums[i] == nums[j+1]){
                         j++;
@@ -20,7 +19,7 @@ public List<List<Integer>> threeSum(int[] nums) {
                     j++;
                     k--;
                 }
-                else if(sum<0){
+                else if(nums[i]+nums[j]+nums[k]<0){
                     j++;
                 }
                 else{
