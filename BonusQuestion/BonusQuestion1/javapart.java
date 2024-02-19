@@ -14,5 +14,8 @@ class javapart{
     }
     public static void main(String[] args) {
         System.out.println(nFibonacci(9));
+        System.out.println(nFibonacci(6));
     }
+
+    
 }
