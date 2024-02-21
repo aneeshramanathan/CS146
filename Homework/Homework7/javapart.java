@@ -13,7 +13,9 @@ public class javapart{
             int end = intervals[i][1];
             int index = -1;
             for(int j=0; j<min; j++){
-                
+                if(){
+                    
+                }
             }
         }
 
