@@ -24,8 +24,6 @@ public class javapart{
         System.out.println(minMeetingRooms(intervals)); 
         int[][] intervalsTwo = {{0, 1}, {1, 2}, {2, 3}};
         System.out.println(minMeetingRooms(intervalsTwo));
-        int[][] intervalsThree = {{1, 3}, {2, 5}, {3, 6}};
-        System.out.println(minMeetingRooms(intervalsThree));
     }
 }
 
