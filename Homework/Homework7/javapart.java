@@ -5,17 +5,17 @@ import java.util.PriorityQueue;
 
 public class javapart{
     public static int minMeetingRooms(int[][] intervals) {  
-        Arrays.sort(intervals, (a,b) -> a[0] - b[0]);
-        PriorityQueue<Integer> endTimes = new PriorityQueue<Integer>();
+        Arrays.sort(intervals, (x,y) -> x[0] - y[0]);
+        PriorityQueue<Integer> serverEndTimes = new PriorityQueue<Integer>();
         for(int i=0; i<intervals.length; i++){
             int start = intervals[i][0];
             int end = intervals[i][1];
-            while(!endTimes.isEmpty() && endTimes.peek()<=start){
-                endTimes.poll();
+            while(!serverEndTimes.isEmpty() && serverEndTimes.peek()<=start){
+                serverEndTimes.poll();
             }
-            endTimes.offer(end);
+            serverEndTimes.offer(end);
         }
-        return endTimes.size();
+        return serverEndTimes.size();
     } 
 
 
