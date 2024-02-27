@@ -1,5 +1,5 @@
 public int longestPalindrome(String s) {
-       if (s == null || s.isEmpty()) {
+       if (s.length() == 0) {
             return 0;
         }
         HashMap<Character, Integer> map = new HashMap<>();
