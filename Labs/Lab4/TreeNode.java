@@ -16,18 +16,10 @@ package Labs.Lab4;
         if(root == null){
             return root;
         }
-        if(root.left == null && root.right == null){
-            return root;
-        }
-        if(root.left != null){
-            left = invertTree(root.left);
-        }
-        if(root.right != null){
-            right = invertTree(root.right);
-        }
-        TreeNode x = left;
-        left = right;
-        right = x;
+        TreeNode left = invertTree(root.left);
+        TreeNode right = invertTree(root.right);
+        root.right = left;
+        root.left = right;
         return root;
     }    
 }
