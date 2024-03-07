@@ -1,1 +1,1 @@
-
+We first check if the rootnode is null and if it is we return either null or the rootnode it doesn't matter because it will return the same thing. We then traverse down the left side of the binary search tree so that we can start swapping the left and the right nodes at the bottom. Then we start to traverse the right side and we keep switching the nodes from bottom to top. Once we reach the top the of the tree we switch the whole left and right side so that the tree becomes inverted.
