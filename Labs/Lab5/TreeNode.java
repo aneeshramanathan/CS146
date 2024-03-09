@@ -18,7 +18,7 @@ package Labs.Lab5;
         }
         int leftMax = max(root.left);
         int rightMax = min(root.right);
-        if(leftMax > root || rightMax < root){
+        if(leftMax > root.val || rightMax < root.val){
             return false;
         }
         boolean left = isValidBST(root.left);
@@ -34,12 +34,12 @@ package Labs.Lab5;
         while(root.right != null){
             root = root.right;
         }
-        return root;
+        return root.val;
     }
     public int min(TreeNode root){
         while(root.left != null){
             root = root.left;
         }
-        return root;
+        return root.val;
     }
  }
