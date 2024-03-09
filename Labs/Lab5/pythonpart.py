@@ -3,19 +3,31 @@ class TreeNode(object):
          self.val = val
          self.left = left
          self.right = right
-
     def isValidBST(self, root):
         if root is None:
             return True
-        if root.left is not None and root.left.val > root.right.val:
-            return False
-        if root.right is not None and root.left.val < root.right.val:
+        leftMax = self.max_val(root.left)
+        rightMin = self.min_val(root.right)
+        if leftMax > root.val or rightMin < root.val:
             return False
         left = self.isValidBST(root.left)
-        right = self.isValidBST(root.left)
-        if left == True and right == True:
+        right = self.isValidBST(root.right)
+        if left and right:
             return True
         else:
             return False
+    def max_val(self, root):
+        while root.right is not None:
+            root = root.right
+        return root.val
+    def min_val(self, root):
+        while root.left is not None:
+            root = root.left
+        return root.val
+
+
+
+
+
 
 
