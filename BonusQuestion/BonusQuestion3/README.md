@@ -1,1 +1,2 @@
-
+1. We first get the number of vertices which we can then create a new matrix using the size n by n. We iterate through each vertex in the list and then we iterate through each neighbor of that vertex in the first for loop. We use nested for loops to get through vertex and the neighbors of the list. Inside the nested for loop we set the correspondong value to 1 and at the end we have to return the final matrix.
+2. To convert from a matrix to a list we have to get the number of rows in the matrix and then make the list length the number of rows. We have to create an empty list with the length of the number of rows of the matrix. 
