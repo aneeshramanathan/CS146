@@ -1,1 +1,21 @@
-
+1. function convertAdjacencyListToAdjacencyMatrix(list):
+      int n = number of vertices
+      matrix = new Matrix(n,n)
+      for (vertex in list):
+        for (each neighbor in list[v]):
+          matrix[neighbor][v]=1
+      return matrix
+2. function convertAdjacencyMatrixToAdjacencyList(matrix):
+      int n = number of vertices
+      list = new List(n)
+      for (each column in matrix):
+        if (edge between vertexs):
+          list.add(vertex)
+      return list
+3. function reverseDirection(graph):
+    int n = number of vertices
+    reverse = new Graph(n)
+    for (each vertex in graph):
+      for (each neighbor of vertex v):
+        reverse.add(original edge, new edge)
+    return reverse
