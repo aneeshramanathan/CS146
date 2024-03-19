@@ -1,1 +1,1 @@
-
+We first created a tree node class where it contains the left and right values of the node and then also the data value that is associated with the node. Then I have the redblack tree class which contains the methods that are needed for the red black tree. I have added the delete, insert and search method which use recursion to parse through the tree.
