@@ -3,11 +3,11 @@ public static List<Integer> topologicalSort(int numCourses, int[][] prerequisite
         for (int i = 0; i < numCourses; i++) {
             graph.add(new ArrayList<>());
         }
-        for (int[] edge : prerequisites) {
-            int course = edge[0];
-            int prerequisite = edge[1];
-            graph.get(course).add(prerequisite); // Reversed edge direction for DFS
-        }
+        for (int i = 0; i < prerequisites.length; i++) {
+    int course = prerequisites[i][0];
+    int prerequisite = prerequisites[i][1];
+    graph.get(course).add(prerequisite); 
+}
         boolean[] visited = new boolean[numCourses];
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < numCourses; i++) {
