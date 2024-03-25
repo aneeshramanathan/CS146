@@ -1,1 +1,2 @@
-
+1. Calculate the in degree for each vertex in the graph then we initialize a queue with vertices having an in degree of 0 and start the BFS. In the BFS we keep track of the in degree of neighboring vertices and add them to a queue if their in degree becomes 0. Once the BFS is done we check if the resulting list matches the number of vertices and we add them to the queue if the in degree becomes 0.
+2. 
