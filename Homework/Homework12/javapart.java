@@ -26,7 +26,7 @@ public int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {
         return solution;
     }
     public int find(int z) {
-        if (p[z] != x) {
+        if (p[z] != z) {
             p[z] = find(p[z]);
         }
         return p[z];
